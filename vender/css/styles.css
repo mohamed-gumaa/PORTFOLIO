@@ -212,10 +212,25 @@ section a{
     }
   }
   
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
+
   } */
+  @media screen and (max-width: 576px) {
+
+    section h2 {
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 0;
+        /* font-size: 0; */
+        width: auto;
+        margin: 60px auto 0;
+    }
+    .sectionOne img ,.sectionTwo img {
+        width: 515px;
+    }
+    section p{
+        width: auto;
+    }
+    .article .artContent {
+      padding: 0;
+    }
+  } 
