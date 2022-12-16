@@ -222,12 +222,15 @@ section a{
         margin: 60px auto 0;
     }
     .sectionOne img ,.sectionTwo img {
-        width: 515px;
+        width: 47px;
     }
     section p{
         width: auto;
     }
     .article .artContent {
       padding: 0;
+    }
+    .about p{
+        margin: 46px 130px 0px;
     }
   } 
