@@ -227,7 +227,7 @@ section a{
         width: auto;
         margin: 60px auto 0;
     }
-    .sectionOne img ,.sectionTwo img {
+    .sectionOne img , .sectionTwo img {
         width: 470px;
     }
     section p{
