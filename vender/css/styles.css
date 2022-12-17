@@ -228,7 +228,7 @@ section a{
         margin: 60px auto 0;
     }
     .sectionOne img , .sectionTwo img {
-        width: 420px;
+        width: 400px;
         height: 420px;
     }
     section p{
@@ -240,4 +240,7 @@ section a{
     .about p{
         margin: 46px 130px 0px;
     }
+    .section-6 .gallery-item .back-side {
+        margin-bottom: 5px;
+}
   } 
