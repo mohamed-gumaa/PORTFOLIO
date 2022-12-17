@@ -169,6 +169,7 @@ section a{
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    margin-bottom:5px;
 }
 .section-6 .gallery-item .back-side .gallimage
 {
@@ -242,5 +243,6 @@ section a{
     }
     .section-6 .gallery-item .back-side {
         margin-bottom: 5px;
-}
+    }
+      
   } 
