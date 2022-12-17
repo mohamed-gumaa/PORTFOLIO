@@ -228,7 +228,8 @@ section a{
         margin: 60px auto 0;
     }
     .sectionOne img , .sectionTwo img {
-        width: 420px auto;
+        width: 420px;
+        height: 420px;
     }
     section p{
         width: auto;
