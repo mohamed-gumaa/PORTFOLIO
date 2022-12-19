@@ -1,3 +1,12 @@
+
+.navbar-toggler {
+    padding: 0;
+    font-size: 35px;
+    color:#fff ;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
 .header{
     height: 403px;
     margin-top: 0;
@@ -45,7 +54,7 @@ section{
     text-align: center;
     margin-bottom: 50px;
 }
-section h2{
+.head h2{
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 4px;
@@ -53,14 +62,14 @@ section h2{
     width: 554px;
     margin: 60px auto 0;
 }
-section b{
+.head b{
     font-weight: bold;
 }
-section p{
+.head p{
     width: 543px;
     margin: 20px auto 0;
 }
-section a{
+.head a , .section-6 .imgLink {
     background-image: none;
     border-style: none none solid;
     text-transform: uppercase;
@@ -77,7 +86,7 @@ section a{
 .sectionTwo p{
     margin: 45px 18px 0 0;
 }
-.sectionTwo a{
+.sectionTwo .readMoreSec{
     background-image: none;
     border:2px solid #000000;
     text-transform: uppercase;
@@ -113,7 +122,7 @@ section a{
 {
     margin: 115px 0 0;
 }
-.article .artContent a
+.article .artContent a , .section-6 .readMore
 {
     background-image: none;
     border-style: none;
@@ -129,6 +138,10 @@ section a{
     border-radius: 0;
     align-self: flex-start;
 
+}
+.section-6 .readMore{
+    display: inline-block;
+    margin-top: 13px;
 }
 .about .abouBorder{
     height: 6px;
@@ -158,51 +171,74 @@ section a{
 
 .section-6 .gallery-item
 {
-    cursor: pointer;
+    transition: 0.3s;
     position: relative;
     overflow: hidden;
-}
-.section-6 .gallery-item .back-side
-{
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    margin-bottom:5px;
+    z-index: 1;
+    background: rgba(21, 21, 21, 0.6);
 }
 .section-6 .gallery-item .back-side .gallimage
 {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    /* position: absolute !important; */
-    left: 0;
-    top: 0;
-    transition: .5s ease;
-    backface-visibility: hidden;
+    max-width: 100%;
+    height: auto;
+}
+.section-6 .gallery-item .back-side img {
+    transition: all ease-in-out 0.3s;
 }
 .section-6 .gallery .col-md-4{
     padding: 2px;
 }
+.gallery-item:hover .overSide {
+    content: "";
+    background: rgb(38 36 36 / 60%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+}
 .section-6 .gallery .overSide {
-    transition: .5s ease;
     opacity: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
   }
   .gallery-item:hover .gallimage {
-    opacity: 0.5;
+    transform: scale(1.2);
   }
   .gallery-item:hover .overSide {
     opacity: 1;
+    
   }
-
+  .section-6 .gallery .overSide h3 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+  }
+.section-6 .gallery .overSide p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+}
+.section-6  .imgLink{
+    display: inline-block;
+    margin-top: 20px;
+}
 
   /* @media screen and (max-width: 1000px) {
     .column {
@@ -228,9 +264,8 @@ section a{
         width: auto;
         margin: 60px auto 0;
     }
-    .sectionOne img , .sectionTwo img {
-        width: 400px;
-        height: 420px;
+    .sectionOne img ، .sectionTwo img {
+        width: 470px;
     }
     section p{
         width: auto;
@@ -241,8 +276,4 @@ section a{
     .about p{
         margin: 46px 130px 0px;
     }
-    .section-6 .gallery-item .back-side {
-        margin-bottom: 5px;
-    }
-      
   } 
