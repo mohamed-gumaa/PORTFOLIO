@@ -236,7 +236,7 @@ section{
 
 @media screen and (max-width: 576px) {
     .head h2 , .head p{
-        width: 400px;
+        width: 37px;
     }
     .headerImage {
         width: 330px;
@@ -254,6 +254,9 @@ section{
     }
     .article .artContent p{
         margin: 0;
+    }
+    .article .artcHead h1 {
+        font-size: 6.125rem
     }
     .about p{
         margin: 20px 0 0 0;
