@@ -43,9 +43,9 @@
     h2 span{
         font-weight: 700;
     }
-    .image-1 ,.image-1{
+    .image-1 ,.image-2{
     height: 590px;
-    width: 430px;
+    width: auto;
     margin-top: 63px;
     margin-bottom: 0;
     margin-left: 0;
