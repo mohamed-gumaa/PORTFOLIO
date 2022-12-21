@@ -261,4 +261,7 @@ section{
     .gallerySection .gallery-item{
         margin-bottom: 5px;
     }
+    .content .sectionTwo .imageTwo{
+        height: 480px;
+    }
 }
