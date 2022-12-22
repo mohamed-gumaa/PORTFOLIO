@@ -236,7 +236,7 @@ section{
 
 @media screen and (max-width: 576px) {
     .head h2 , .head p{
-        width: 37px;
+        width: 370px;
     }
     .headerImage {
         width: 330px;
