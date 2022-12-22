@@ -267,4 +267,7 @@ section{
     .content .sectionTwo .imageTwo{
         height: 480px;
     }
+    .content .sectionOne .imageOne {
+    height: 510px;
+    }
 }
