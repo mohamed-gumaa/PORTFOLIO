@@ -299,10 +299,9 @@ section{
     .gallerySection .gallery-item{
         margin-bottom: 5px;
     }
-    .content .sectionTwo .imageTwo{
+    .content .sectionTwo .imageTwo ,
+     .content .sectionOne .imageOne
+    {
         height: 480px;
-    }
-    .content .sectionOne .imageOne {
-    height: 510px;
     }
 }
