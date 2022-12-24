@@ -330,6 +330,12 @@ section{
     .about p{
         margin: 20px 0 0 0;
     }
+    /* gallerySection */
+    .gallerySection .gallery
+    {
+        margin-top: 40px;
+
+    }
     .gallerySection .gallery-item{
         margin-bottom: 5px;
     }
@@ -338,7 +344,9 @@ section{
     {
         height: 480px;
     }
-
+    .galleryarr {
+        height: 18vh;
+    }
     .communication .commContentBottom{
         padding-top: 80px;
     }
