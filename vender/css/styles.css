@@ -78,7 +78,9 @@ section{
     font-weight: 300;
     margin: 0;
 }
-.content .sectionOne h2 span{
+.content .sectionOne h2 span ,
+.communication .commContentTop span
+{
     font-weight: 700;
 }
 .content .sectionTwo .imageTwo{
@@ -125,7 +127,8 @@ section{
     margin: 120px 0 0;
 }
 .article .artContent a ,
-.gallerySection .readMore
+.gallerySection .readMore ,
+.communication .commContentTop a
 {
     font-weight: 700;
     text-transform: uppercase;
@@ -162,13 +165,14 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-        }
+    }
+
 .galleryarr span
 {
-    width: 10px;
-    height: 40px;
+    width: 5px;
+    height: 22px;
     border-radius: 5px;
-    margin: 6px;
+    margin: 4px;
     background-color: #000;
     animation: move 1.5s infinite ease-in-out;
 }
@@ -209,6 +213,11 @@ section{
     overflow: hidden;
     z-index: 1;
     background: rgba(21, 21, 21, 0.6);
+    margin-bottom: 5px;
+}
+.gallerySection .back-side
+{
+    height: 237px;
 }
 .gallerySection .gallery-item .back-side .galleryImage
 {
@@ -268,6 +277,31 @@ section{
     margin-top: 20px;
 }
 
+.portfolio{
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    display: flex;
+    padding: 23px;
+}
+
+/* communication */
+.communication{
+    margin-top: 100px;
+}
+
+.communication .commContentTop h1 {
+    font-weight: 300;
+    line-height: 1.1;
+}
+.communication .commContentTop p{
+    margin-top: 30px;
+}
+
+.communication .commContentBottom{
+    padding-top: 240px;
+}
 
 @media screen and (max-width: 576px) {
     .head h2 , .head p{
@@ -304,4 +338,9 @@ section{
     {
         height: 480px;
     }
+
+    .communication .commContentBottom{
+        padding-top: 80px;
+    }
+    
 }
